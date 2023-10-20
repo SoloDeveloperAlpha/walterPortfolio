@@ -1,0 +1,543 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/*H1 - font-size: 45px 2.8em Titulo
+H2 - font-size: 32px 1.99em sub-titulo
+H3 - font-size: 23px 1.41em sub-tit_parte-cont
+p - font-size: 16px; 1em parrafo
+a - font-size: 16px; 1em enlaces
+small - font-size: 11px; 0.7em letra pequeña
+footer - footer-size:11px; 0.7em letra pequeña(solo en determinados casos)*/
+:root {
+  --H1F:3.5em;
+  --H2F:2.8em;
+  --H3F:1.99em;
+  --H4F:1.21em;
+  --p_arF:1em;
+  --sml_fotF:0.7em;
+  --CoLPRIM:#176B87;
+  --ColPRIM_F:#053B50;
+  --ColPRIM_S:#64CCC5;
+  --TINTE_F:#222222;
+  --TINTE_S:#EEEEEE;
+}
+
+::selection {
+  background-color: #208085;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--ColPRIM_F);
+}
+
+h1, h2, h3, h4, p, a, span, small, footer {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: var(--H1F);
+}
+
+h2 {
+  font-size: var(--H2F);
+}
+
+h3 {
+  font-size: var(--H3F);
+}
+
+h4 {
+  font-size: var(--H4F);
+  font-weight: bold;
+}
+
+p, a, span {
+  font-size: var(--p_arF);
+}
+
+small, footer {
+  font-size: var(--sml_fotF);
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(90deg, var(--ColPRIM_F), var(--CoLPRIM));
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "luna luna luna luna luna" "head head sec sec sec";
+}
+main .vista {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  grid-area: luna;
+}
+main .vista #view {
+  padding: 1em;
+  font-size: 1.5em;
+  color: var(--TINTE_S);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+main .cabecera {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 5em 0;
+  gap: 3.5em;
+  grid-area: head;
+  color: var(--TINTE_S);
+}
+main .cabecera .cont1-hed {
+  width: 100%;
+  max-width: 458px;
+  max-height: 206px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+main .cabecera .cont1-hed > h3 {
+  font-weight: 400;
+}
+main .cabecera .cont1-hed > p {
+  text-wrap: balance;
+  line-height: 1.4em;
+  color: rgba(238, 238, 238, 0.662745098);
+}
+main .cabecera > nav {
+  width: 100%;
+  max-width: 458px;
+  max-height: 287px;
+}
+main .cabecera > nav > ul {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+main .cabecera > nav > ul > li {
+  width: 100%;
+  list-style: none;
+}
+main .cabecera > nav > ul > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #EEEEEE;
+  bottom: -6px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+main .cabecera > nav > ul > li > a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+main .cabecera > nav > ul > li > a {
+  position: relative;
+  width: 200px;
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.662745098);
+  transform: translateX(0px);
+  transition: transform, color 0.2s ease-in-out;
+}
+main .cabecera > nav > ul > li > a:hover {
+  transform: translateX(48px);
+  color: var(--TINTE_S);
+}
+main .cabecera .social {
+  width: 100%;
+  max-width: 458px;
+}
+main .cabecera .social > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+main .cabecera .social > ul > li {
+  list-style: none;
+}
+main .cabecera .social > ul > li > a {
+  text-decoration: none;
+}
+main .cabecera .social > ul > li > a > i {
+  color: rgba(238, 238, 238, 0.662745098);
+  font-size: 1.7em;
+}
+main .cabecera .social > ul > li > a > i:hover {
+  color: var(--TINTE_S);
+}
+main .sec-princ {
+  width: auto;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  grid-area: sec;
+  color: var(--TINTE_S);
+  /*.hab2*/
+  /*====================================*/
+}
+main .sec-princ .fantas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+main .sec-princ .fantas #etq_fants {
+  display: none;
+}
+main .sec-princ .sobre-mi .cont-sobre-mi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-wrap: balance;
+  line-height: 1.4em;
+  padding-top: 5em;
+  gap: 1.5em;
+}
+main .sec-princ .sobre-mi .cont-sobre-mi #parrf1, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 {
+  width: 475px;
+  min-width: 475px;
+  color: rgba(238, 238, 238, 0.662745098);
+}
+main .sec-princ .sobre-mi .cont-sobre-mi #parrf1 > a, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2 > a, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 > a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--TINTE_S);
+  cursor: url("../images/gym.png") 16 16, auto;
+}
+main .sec-princ .sobre-mi .cont-sobre-mi #parrf1 > span, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2 > span, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 > span {
+  font-weight: 500;
+  color: var(--TINTE_S);
+}
+main .sec-princ .habilidades {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+main .sec-princ .habilidades .hab1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7em;
+  gap: 1.5em;
+}
+main .sec-princ .habilidades .hab1 .dat-hab {
+  width: 100%;
+  max-width: 475px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+main .sec-princ .habilidades .hab1 .dat-hab .nivel {
+  width: 100%;
+  max-width: 15em;
+  height: 0.8em;
+  background-color: rgba(255, 255, 255, 0.39);
+  border-radius: 1em;
+  box-shadow: inset 1px 1px 1px var(--TINTE_F);
+}
+main .sec-princ .habilidades .hab1 .dat-hab .nivel > div {
+  background-color: var(--CoLPRIM);
+  opacity: 0.7;
+  border-radius: 1em;
+  box-shadow: inset 1px 1px 1px var(--TINTE_F);
+}
+main .sec-princ .habilidades .hab1 .dat-hab .nivel .lvl1 {
+  width: 70%;
+  height: 100%;
+}
+main .sec-princ .habilidades .hab1 .dat-hab .nivel .lvl2 {
+  width: 75%;
+  height: 100%;
+}
+main .sec-princ .habilidades .hab1 .dat-hab .nivel .lvl3 {
+  width: 80%;
+  height: 100%;
+}
+main .sec-princ .habilidades .hab1 .dat-hab .nivel .lvl4 {
+  width: 85%;
+  height: 100%;
+}
+main .sec-princ .habilidades .hab2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 3em;
+}
+main .sec-princ .habilidades .hab2 .cont-hab2 {
+  width: 100%;
+  max-width: 475px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  padding-right: 5em;
+  gap: 0.4em;
+}
+main .sec-princ .skill {
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  background-color: var(--ColPRIM_S);
+  border-radius: 1em;
+}
+main .sec-princ .skill > span {
+  color: #176B87;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+}
+main .sec-princ .proy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 7em;
+  margin-top: 1em;
+  gap: 2em;
+}
+main .sec-princ .proy > a {
+  color: currentColor;
+  text-decoration: none;
+}
+main .sec-princ .proy > a .tarjeta-proy {
+  width: 475px;
+  min-width: 475px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  transition: 0.2s ease-in-out;
+}
+main .sec-princ .proy > a .tarjeta-proy #fech-proy {
+  width: 13em;
+  font-size: 0.9em;
+  color: var(--TINTE_S);
+  opacity: 80%;
+}
+main .sec-princ .proy > a .tarjeta-proy .type-proy {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5em;
+}
+main .sec-princ .proy > a .tarjeta-proy .type-proy > h4 {
+  font-weight: 500;
+}
+main .sec-princ .proy > a .tarjeta-proy .type-proy > h4 > i {
+  font-size: 0.5em;
+  transform: rotate(45deg);
+}
+main .sec-princ .proy > a .tarjeta-proy .type-proy > p {
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+main .sec-princ .proy > a .tarjeta-proy .type-proy .proy-skills {
+  width: 100%;
+  display: flex;
+  gap: 0.4em;
+}
+main .sec-princ .proy > a .tarjeta-proy:hover {
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 0.5em;
+  box-shadow: inset 0px 0.5px 0.5px;
+  cursor: pointer;
+}
+main .sec-princ .proy > a .tarjeta-proy:hover h4 {
+  text-shadow: 1px 1px 1px var(--TINTE_F);
+}
+main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
+  transform: rotate(45deg) translateY(-5px);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "luna luna luna luna" "head head head head" "sec  sec  sec  sec";
+  }
+  main .vista {
+    grid-area: luna;
+  }
+  main .cabecera {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 3em;
+    grid-area: head;
+  }
+  main .cabecera > nav {
+    display: none;
+  }
+  main .sec-princ {
+    width: 100%;
+    grid-area: sec;
+    justify-content: start;
+    align-items: start;
+  }
+  main .sec-princ .sobre-mi .cont-sobre-mi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap: balance;
+    padding-top: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    gap: 1.5em;
+  }
+  main .sec-princ .sobre-mi .cont-sobre-mi #parrf1, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 {
+    width: 100%;
+    height: auto;
+    color: rgba(238, 238, 238, 0.662745098);
+  }
+  main .sec-princ .sobre-mi .cont-sobre-mi #parrf1 > a, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2 > a, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 > a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--TINTE_S);
+    cursor: url("../images/gym.png") 16 16, auto;
+  }
+  main .sec-princ .sobre-mi .cont-sobre-mi #parrf1 > span, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2 > span, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 > span {
+    font-weight: 500;
+    color: var(--TINTE_S);
+  }
+  main .sec-princ .habilidades {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7em;
+    padding-left: 3em;
+    padding-right: 3em;
+    gap: 1.5em;
+  }
+  main .sec-princ .habilidades .hab1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    gap: 1.5em;
+  }
+  main .sec-princ .habilidades .hab2 {
+    width: 50%;
+  }
+  main .sec-princ .proy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 7em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 1em;
+    gap: 2em;
+  }
+  main .sec-princ .proy > a {
+    color: currentColor;
+    text-decoration: none;
+  }
+  main .sec-princ .proy > a .tarjeta-proy {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    transition: 0.1s ease-in-out;
+  }
+  main .sec-princ .proy > a .tarjeta-proy #fech-proy {
+    width: 13em;
+    font-size: 0.9em;
+    color: var(--TINTE_S);
+    opacity: 80%;
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5em;
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy > h4 {
+    font-weight: 500;
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy > h4 > i {
+    font-size: 0.5em;
+    transform: rotate(45deg);
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy > p {
+    font-size: 0.9em;
+    font-weight: lighter;
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy .proy-skills {
+    width: 100%;
+    display: flex;
+    gap: 0.4em;
+  }
+  main .sec-princ .proy > a .tarjeta-proy:hover {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px;
+  }
+  main .sec-princ .proy > a .tarjeta-proy:hover h4 {
+    text-shadow: 1px 1px 1px var(--TINTE_F);
+  }
+  main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
+    transform: rotate(45deg) translateY(-5px);
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
