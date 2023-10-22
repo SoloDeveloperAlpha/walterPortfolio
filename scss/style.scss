@@ -215,7 +215,7 @@ main{
             gap: 1.5em;
                 #parrf1,#parrf2,#parrf3{
                     width: 475px;
-                    min-width: 475px;
+                    max-width: 475px;
                     color: #eeeeeea9;
                     >a{
                         text-decoration: none;
@@ -332,8 +332,7 @@ main{
                 color: currentColor;
                 text-decoration: none;
                 .tarjeta-proy{
-                    width: 475px;
-                    min-width: 475px;
+                    max-width: 475px;
                     height: auto;
                     display: flex;
                     flex-direction: row;
@@ -495,6 +494,162 @@ main{
                         display: flex;
                         flex-direction: row;
                         padding: 1em;
+                        transition: .1s ease-in-out;
+                        #fech-proy{
+                            width: 13em;
+                            font-size: 0.9em;
+                            color: var(--TINTE_S);
+                            opacity: 80%;
+                        }
+                        .type-proy{
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                            gap: 0.5em;
+                            >h4{
+                                font-weight: 500;
+                                >i{
+                                    font-size: 0.5em;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                            >p{
+                                font-size: 0.9em;
+                                font-weight: lighter;
+                            }
+                            .proy-skills{
+                                width: 100%;
+                                display: flex;
+                                gap: 0.4em;
+                            }
+                        }
+                    }
+                    .tarjeta-proy:hover{
+                        background-color: transparent;
+                        border-radius: 0px;
+                        box-shadow: inset 0px 0px 0px;
+                    }
+                    .tarjeta-proy:hover h4{
+                        text-shadow: 1px 1px 1px var(--TINTE_F);
+                        >i{
+                            transform: rotate(45deg) translateY(-5px);
+                        }
+                    }
+                }
+                
+            }
+        }
+        }
+}
+
+@media screen and (max-width:767px){
+    main{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"luna luna" 
+                            "head head"
+                            "sec  sec ";
+
+        .vista{
+            grid-area:luna;
+        }
+        .cabecera{
+            width: 100%;
+            height: auto;
+            position: relative;
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            padding: 0 1em;
+            grid-area: head;
+            >nav{
+                display: none;
+            }
+        }
+        .sec-princ{
+            width: 100%;
+            grid-area: sec;
+            justify-content: start;
+            align-items: start;
+            .sobre-mi{
+                .cont-sobre-mi{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-wrap: balance;
+                padding-top: 5em;
+                padding-left: 3em;
+                padding-right: 3em;
+                gap: 1.5em;
+                #parrf1,#parrf2,#parrf3{
+                        width: 100%;
+                        height: auto;
+                        color: #eeeeeea9;
+                        >a{
+                            text-decoration: none;
+                            font-weight: 500;
+                            color: var(--TINTE_S);
+                            cursor: url("../images/gym.png") 16 16,auto;
+                        }
+                        >span{
+                            font-weight: 500;
+                            color: var(--TINTE_S);
+                        }
+                    }
+                }
+            }
+            .habilidades{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-top: 7em;
+                padding-left: 3em;
+                padding-right: 3em;
+                gap: 1.5em;
+                .hab1{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 0;
+                    gap: 1.5em;
+                }
+                .hab2{
+                    width: 50%;
+                }
+            }
+            
+            .proy{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                padding-top: 7em;
+                padding-left: 3em;
+                padding-right: 3em;
+                margin-top: 1em;
+                gap: 2em;
+                >a{
+                    color: currentColor;
+                    text-decoration: none;
+                    .tarjeta-proy{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
                         transition: .1s ease-in-out;
                         #fech-proy{
                             width: 13em;

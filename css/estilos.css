@@ -226,7 +226,7 @@ main .sec-princ .sobre-mi .cont-sobre-mi {
 }
 main .sec-princ .sobre-mi .cont-sobre-mi #parrf1, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 {
   width: 475px;
-  min-width: 475px;
+  max-width: 475px;
   color: rgba(238, 238, 238, 0.662745098);
 }
 main .sec-princ .sobre-mi .cont-sobre-mi #parrf1 > a, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2 > a, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 > a {
@@ -338,8 +338,7 @@ main .sec-princ .proy > a {
   text-decoration: none;
 }
 main .sec-princ .proy > a .tarjeta-proy {
-  width: 475px;
-  min-width: 475px;
+  max-width: 475px;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -494,6 +493,154 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
     display: flex;
     flex-direction: row;
     padding: 1em;
+    transition: 0.1s ease-in-out;
+  }
+  main .sec-princ .proy > a .tarjeta-proy #fech-proy {
+    width: 13em;
+    font-size: 0.9em;
+    color: var(--TINTE_S);
+    opacity: 80%;
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5em;
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy > h4 {
+    font-weight: 500;
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy > h4 > i {
+    font-size: 0.5em;
+    transform: rotate(45deg);
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy > p {
+    font-size: 0.9em;
+    font-weight: lighter;
+  }
+  main .sec-princ .proy > a .tarjeta-proy .type-proy .proy-skills {
+    width: 100%;
+    display: flex;
+    gap: 0.4em;
+  }
+  main .sec-princ .proy > a .tarjeta-proy:hover {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px;
+  }
+  main .sec-princ .proy > a .tarjeta-proy:hover h4 {
+    text-shadow: 1px 1px 1px var(--TINTE_F);
+  }
+  main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
+    transform: rotate(45deg) translateY(-5px);
+  }
+}
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "luna luna" "head head" "sec  sec ";
+  }
+  main .vista {
+    grid-area: luna;
+  }
+  main .cabecera {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0 1em;
+    grid-area: head;
+  }
+  main .cabecera > nav {
+    display: none;
+  }
+  main .sec-princ {
+    width: 100%;
+    grid-area: sec;
+    justify-content: start;
+    align-items: start;
+  }
+  main .sec-princ .sobre-mi .cont-sobre-mi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap: balance;
+    padding-top: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    gap: 1.5em;
+  }
+  main .sec-princ .sobre-mi .cont-sobre-mi #parrf1, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 {
+    width: 100%;
+    height: auto;
+    color: rgba(238, 238, 238, 0.662745098);
+  }
+  main .sec-princ .sobre-mi .cont-sobre-mi #parrf1 > a, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2 > a, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 > a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--TINTE_S);
+    cursor: url("../images/gym.png") 16 16, auto;
+  }
+  main .sec-princ .sobre-mi .cont-sobre-mi #parrf1 > span, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2 > span, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 > span {
+    font-weight: 500;
+    color: var(--TINTE_S);
+  }
+  main .sec-princ .habilidades {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7em;
+    padding-left: 3em;
+    padding-right: 3em;
+    gap: 1.5em;
+  }
+  main .sec-princ .habilidades .hab1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    gap: 1.5em;
+  }
+  main .sec-princ .habilidades .hab2 {
+    width: 50%;
+  }
+  main .sec-princ .proy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 7em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 1em;
+    gap: 2em;
+  }
+  main .sec-princ .proy > a {
+    color: currentColor;
+    text-decoration: none;
+  }
+  main .sec-princ .proy > a .tarjeta-proy {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     transition: 0.1s ease-in-out;
   }
   main .sec-princ .proy > a .tarjeta-proy #fech-proy {
