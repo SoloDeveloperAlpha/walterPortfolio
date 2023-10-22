@@ -528,9 +528,10 @@ main{
                         }
                     }
                     .tarjeta-proy:hover{
-                        background-color: transparent;
-                        border-radius: 0px;
-                        box-shadow: inset 0px 0px 0px;
+                        background-color: rgba(255, 255, 255, 0.103);
+                        border-radius: 0.5em;
+                        box-shadow: inset 0px 0.5px 0.5px;
+                        cursor: pointer;
                     }
                     .tarjeta-proy:hover h4{
                         text-shadow: 1px 1px 1px var(--TINTE_F);
@@ -567,7 +568,6 @@ main{
             flex-direction: column;
             justify-content: start;
             align-items: center;
-            padding: 0 1em;
             grid-area: head;
             >nav{
                 display: none;
@@ -587,8 +587,8 @@ main{
                 align-items: center;
                 text-wrap: balance;
                 padding-top: 5em;
-                padding-left: 3em;
-                padding-right: 3em;
+                padding-left: 1em;
+                padding-right: 1em;
                 gap: 1.5em;
                 #parrf1,#parrf2,#parrf3{
                         width: 100%;
@@ -614,8 +614,8 @@ main{
                 justify-content: center;
                 align-items: center;
                 padding-top: 7em;
-                padding-left: 3em;
-                padding-right: 3em;
+                padding-left: 1em;
+                padding-right: 1em;
                 gap: 1.5em;
                 .hab1{
                     width: 50%;
@@ -628,6 +628,13 @@ main{
                 }
                 .hab2{
                     width: 50%;
+                    .cont-hab2{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    }
                 }
             }
             
@@ -638,8 +645,8 @@ main{
                 justify-content: start;
                 align-items: center;
                 padding-top: 7em;
-                padding-left: 3em;
-                padding-right: 3em;
+                padding-left: 1em;
+                padding-right: 1em;
                 margin-top: 1em;
                 gap: 2em;
                 >a{
@@ -651,6 +658,7 @@ main{
                         display: flex;
                         flex-direction: column;
                         transition: .1s ease-in-out;
+                        padding: 1em;
                         #fech-proy{
                             width: 13em;
                             font-size: 0.9em;
@@ -684,9 +692,10 @@ main{
                         }
                     }
                     .tarjeta-proy:hover{
-                        background-color: transparent;
-                        border-radius: 0px;
-                        box-shadow: inset 0px 0px 0px;
+                        background-color: rgba(255, 255, 255, 0.103);
+                        border-radius: 0.5em;
+                        box-shadow: inset 0px 0.5px 0.5px;
+                        cursor: pointer;
                     }
                     .tarjeta-proy:hover h4{
                         text-shadow: 1px 1px 1px var(--TINTE_F);

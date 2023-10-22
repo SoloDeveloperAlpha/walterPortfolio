@@ -527,9 +527,10 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
     gap: 0.4em;
   }
   main .sec-princ .proy > a .tarjeta-proy:hover {
-    background-color: transparent;
-    border-radius: 0px;
-    box-shadow: inset 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border-radius: 0.5em;
+    box-shadow: inset 0px 0.5px 0.5px;
+    cursor: pointer;
   }
   main .sec-princ .proy > a .tarjeta-proy:hover h4 {
     text-shadow: 1px 1px 1px var(--TINTE_F);
@@ -558,7 +559,6 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding: 0 1em;
     grid-area: head;
   }
   main .cabecera > nav {
@@ -578,8 +578,8 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
     align-items: center;
     text-wrap: balance;
     padding-top: 5em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
     gap: 1.5em;
   }
   main .sec-princ .sobre-mi .cont-sobre-mi #parrf1, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 {
@@ -604,8 +604,8 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
     justify-content: center;
     align-items: center;
     padding-top: 7em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
     gap: 1.5em;
   }
   main .sec-princ .habilidades .hab1 {
@@ -620,6 +620,13 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
   main .sec-princ .habilidades .hab2 {
     width: 50%;
   }
+  main .sec-princ .habilidades .hab2 .cont-hab2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
   main .sec-princ .proy {
     width: 100%;
     display: flex;
@@ -627,8 +634,8 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
     justify-content: start;
     align-items: center;
     padding-top: 7em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
     margin-top: 1em;
     gap: 2em;
   }
@@ -642,6 +649,7 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
     display: flex;
     flex-direction: column;
     transition: 0.1s ease-in-out;
+    padding: 1em;
   }
   main .sec-princ .proy > a .tarjeta-proy #fech-proy {
     width: 13em;
@@ -675,9 +683,10 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
     gap: 0.4em;
   }
   main .sec-princ .proy > a .tarjeta-proy:hover {
-    background-color: transparent;
-    border-radius: 0px;
-    box-shadow: inset 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.103);
+    border-radius: 0.5em;
+    box-shadow: inset 0px 0.5px 0.5px;
+    cursor: pointer;
   }
   main .sec-princ .proy > a .tarjeta-proy:hover h4 {
     text-shadow: 1px 1px 1px var(--TINTE_F);
