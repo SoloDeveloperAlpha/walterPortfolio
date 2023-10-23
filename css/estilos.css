@@ -101,7 +101,6 @@ main .cabecera {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding: 0 1em;
   margin: 5em 0;
   gap: 3.5em;
   grid-area: head;
