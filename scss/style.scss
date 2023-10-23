@@ -566,9 +566,10 @@ main{
             background: transparent;
             display: flex;
             flex-direction: column;
-            justify-content: start;
-            align-items: center;
+            justify-content: center;
+            align-items: start;
             grid-area: head;
+            padding: 0 1em;
             >nav{
                 display: none;
             }
