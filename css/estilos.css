@@ -7,6 +7,10 @@ p - font-size: 16px; 1em parrafo
 a - font-size: 16px; 1em enlaces
 small - font-size: 11px; 0.7em letra pequeña
 footer - footer-size:11px; 0.7em letra pequeña(solo en determinados casos)*/
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --H1F:3.5em;
   --H2F:2.8em;
@@ -371,6 +375,15 @@ main .sec-princ .proy > a .tarjeta-proy .type-proy > h4 > i {
 main .sec-princ .proy > a .tarjeta-proy .type-proy > p {
   font-size: 0.9em;
   font-weight: lighter;
+  max-width: 40ch;
+}
+main .sec-princ .proy > a .tarjeta-proy .type-proy .tools {
+  padding: 0.5em 0;
+}
+main .sec-princ .proy > a .tarjeta-proy .type-proy .tools > img {
+  width: 12em;
+  height: auto;
+  border-radius: 5px;
 }
 main .sec-princ .proy > a .tarjeta-proy .type-proy .proy-skills {
   width: 100%;

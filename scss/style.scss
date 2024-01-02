@@ -6,6 +6,9 @@ p - font-size: 16px; 1em parrafo
 a - font-size: 16px; 1em enlaces
 small - font-size: 11px; 0.7em letra pequeña
 footer - footer-size:11px; 0.7em letra pequeña(solo en determinados casos)*/
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --H1F:3.5em;
     --H2F:2.8em;
@@ -363,6 +366,17 @@ main{
                         >p{
                             font-size: 0.9em;
                             font-weight: lighter;
+                            max-width: 40ch;
+                        }
+                        
+                        
+                        .tools{
+                            padding: .5em 0;
+                            >img{
+                                width: 12em;
+                                height: auto;
+                                border-radius: 5px;
+                            }
                         }
                         .proy-skills{
                             width: 100%;
