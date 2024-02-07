@@ -214,7 +214,7 @@ main{
             align-items: center;
             text-wrap: balance;
             line-height: 1.4em;
-            padding-top: 5em;
+            padding: 5em 0;
             gap: 1.5em;
                 #parrf1,#parrf2,#parrf3{
                     width: 475px;
@@ -240,13 +240,13 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 align-items: start;
+                padding: 5em;
             .hab1{
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding-top: 7em;
                 gap: 1.5em;
             .dat-hab{
                 width: 100%;
@@ -328,7 +328,7 @@ main{
             flex-direction: column;
             justify-content: start;
             align-items: center;
-            padding-top: 7em;
+            padding-top: 5em;
             margin-top: 1em;
             margin-bottom: 5em;
             gap: 2em;
@@ -400,7 +400,33 @@ main{
             }
             
         }
+        .cert {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            padding: 2em 0;
+            >a{
+                text-decoration: none;
+                color: #EEEEEE;
+                >h4{
+                    font-family: var(--H4F);
+                font-weight: 500;
+                }
+            }
+        }
         
+    }
+}
+footer{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 1em 4em 1em 0;
+    >img{
+        width: 50px;
+        height: 50px;
     }
 }
 @media screen and (min-width:768px) and (max-width:1023px){

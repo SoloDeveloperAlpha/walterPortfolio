@@ -225,7 +225,7 @@ main .sec-princ .sobre-mi .cont-sobre-mi {
   align-items: center;
   text-wrap: balance;
   line-height: 1.4em;
-  padding-top: 5em;
+  padding: 5em 0;
   gap: 1.5em;
 }
 main .sec-princ .sobre-mi .cont-sobre-mi #parrf1, main .sec-princ .sobre-mi .cont-sobre-mi #parrf2, main .sec-princ .sobre-mi .cont-sobre-mi #parrf3 {
@@ -250,6 +250,7 @@ main .sec-princ .habilidades {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  padding: 5em;
 }
 main .sec-princ .habilidades .hab1 {
   width: 100%;
@@ -257,7 +258,6 @@ main .sec-princ .habilidades .hab1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 7em;
   gap: 1.5em;
 }
 main .sec-princ .habilidades .hab1 .dat-hab {
@@ -333,7 +333,7 @@ main .sec-princ .proy {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding-top: 7em;
+  padding-top: 5em;
   margin-top: 1em;
   margin-bottom: 5em;
   gap: 2em;
@@ -401,6 +401,33 @@ main .sec-princ .proy > a .tarjeta-proy:hover h4 {
 }
 main .sec-princ .proy > a .tarjeta-proy:hover h4 > i {
   transform: rotate(45deg) translateY(-5px);
+}
+main .sec-princ .cert {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 2em 0;
+}
+main .sec-princ .cert > a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+main .sec-princ .cert > a > h4 {
+  font-family: var(--H4F);
+  font-weight: 500;
+}
+
+footer {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin: 1em 4em 1em 0;
+}
+footer > img {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
