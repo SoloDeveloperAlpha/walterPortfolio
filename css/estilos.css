@@ -306,8 +306,7 @@ main .sec-princ .habilidades .hab2 {
   padding-top: 3em;
 }
 main .sec-princ .habilidades .hab2 .cont-hab2 {
-  width: 100%;
-  max-width: 475px;
+  width: 475px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -343,7 +342,7 @@ main .sec-princ .proy > a {
   text-decoration: none;
 }
 main .sec-princ .proy > a .tarjeta-proy {
-  max-width: 475px;
+  width: 475px;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -375,7 +374,7 @@ main .sec-princ .proy > a .tarjeta-proy .type-proy > h4 > i {
 main .sec-princ .proy > a .tarjeta-proy .type-proy > p {
   font-size: 0.9em;
   font-weight: lighter;
-  max-width: 40ch;
+  min-width: 40ch;
 }
 main .sec-princ .proy > a .tarjeta-proy .type-proy .tools {
   padding: 0.5em 0;
@@ -529,7 +528,7 @@ footer > img {
     text-decoration: none;
   }
   main .sec-princ .proy > a .tarjeta-proy {
-    width: 100%;
+    width: 475px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -642,32 +641,40 @@ footer > img {
   main .sec-princ .habilidades {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding-top: 7em;
     padding-left: 1em;
     padding-right: 1em;
     gap: 1.5em;
   }
   main .sec-princ .habilidades .hab1 {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     padding-top: 0;
     gap: 1.5em;
+    border: 1px solid yellow;
   }
   main .sec-princ .habilidades .hab2 {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid yellow;
   }
   main .sec-princ .habilidades .hab2 .cont-hab2 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding-right: 0;
   }
   main .sec-princ .proy {
     width: 100%;
@@ -682,6 +689,7 @@ footer > img {
     gap: 2em;
   }
   main .sec-princ .proy > a {
+    width: 100%;
     color: currentColor;
     text-decoration: none;
   }

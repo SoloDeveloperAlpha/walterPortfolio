@@ -294,8 +294,7 @@ main{
                 align-items: center;
                 padding-top: 3em;
                 .cont-hab2{
-                    width: 100%;
-                    max-width: 475px;
+                    width: 475px;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: start;
@@ -336,7 +335,7 @@ main{
                 color: currentColor;
                 text-decoration: none;
                 .tarjeta-proy{
-                    max-width: 475px;
+                    width: 475px;
                     height: auto;
                     display: flex;
                     flex-direction: row;
@@ -366,7 +365,7 @@ main{
                         >p{
                             font-size: 0.9em;
                             font-weight: lighter;
-                            max-width: 40ch;
+                            min-width: 40ch;
                         }
                         
                         
@@ -530,7 +529,7 @@ footer{
                     color: currentColor;
                     text-decoration: none;
                     .tarjeta-proy{
-                        width: 100%;
+                        width: 475px;
                         height: auto;
                         display: flex;
                         flex-direction: row;
@@ -652,30 +651,38 @@ footer{
             .habilidades{
                 width: 100%;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: start;
                 padding-top: 7em;
                 padding-left: 1em;
                 padding-right: 1em;
                 gap: 1.5em;
                 .hab1{
-                    width: 50%;
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    justify-content: start;
+                    align-items: start;
                     padding-top: 0;
                     gap: 1.5em;
+                    border: 1px solid yellow;
                 }
                 .hab2{
-                    width: 50%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    border: 1px solid yellow;
                     .cont-hab2{
+                    width: 100%;
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    justify-content: space-around;
+                    justify-content: center;
                     align-items: center;
+                    padding-right: 0;
                     }
                 }
             }
@@ -692,6 +699,7 @@ footer{
                 margin-top: 1em;
                 gap: 2em;
                 >a{
+                    width: 100%;
                     color: currentColor;
                     text-decoration: none;
                     .tarjeta-proy{
